@@ -1,0 +1,23 @@
+<%- include("../../partials/header.ejs")%>  
+<%- include("../../partials/navbar.ejs")%>  
+
+<div class="container">
+    <hr>
+    <div class="card">
+        <div class="card-header">
+            <h2>Cadastro de Usuários</h2>
+        </div>
+        <div class="card-body">
+            <form action="/admin/users/save" method="post">
+                <input type="text" class="form-control" name="email" placeholder="Defina o e-mail do usuário"><br>
+                <input type="password" class="form-control" name="password" placeholder="********"><br>
+                <button class="btn btn-success">Cadastrar</button>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<%- include("../../partials/footer.ejs")%>  
